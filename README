@@ -1,0 +1,16 @@
+You can use this small class to add pagination to your selects.
+
+A small example could be:
+
+<?php
+
+include('SQLBase.class.php');
+
+$sql = "select * from posts";
+
+// adds the pagination, that gives out 10 posts
+$sql .= SQLBase::pagination(10,0);
+
+// continue with your execution of the script
+
+?>
